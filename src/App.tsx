@@ -37,10 +37,10 @@ import { LeadSubmission } from "./types";
 import AssessmentModal from "./components/AssessmentModal";
 import VideoPresentation from "./components/VideoPresentation";
 
-// Image constants generated in our work
-const HERO_BG_IMAGE = "/src/assets/images/hero_digital_grid_1781874352918.jpg";
-const MEETING_ROOM_IMAGE = "/src/assets/images/boardroom_meeting_bw_1781874368712.jpg";
-const SHIPYARD_IMAGE = "/src/assets/images/shipyard_regnicoli_1781874384375.jpg";
+// Image constants moved to standard public assets layout for simple production serving
+const HERO_BG_IMAGE = "/images/hero_digital_grid_1781874352918.jpg";
+const MEETING_ROOM_IMAGE = "/images/boardroom_meeting_bw_1781874368712.jpg";
+const SHIPYARD_IMAGE = "/images/shipyard_regnicoli_1781874384375.jpg";
 
 export default function App() {
   const [isAssessmentOpen, setIsAssessmentOpen] = useState(false);
