@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, svelte-system, Roboto, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-opti-navy: #040d21;
+  --color-opti-blue: #0b1e42;
+  --color-opti-medium: #112a59;
+  --color-opti-cyan: #00b4d8;
+  --color-opti-cyan-light: #90e0ef;
+  --color-opti-slate: #f8f9fa;
+  --color-opti-muted: #64748b;
+  --color-opti-dark-slate: #1e293b;
+}
+
+/* Custom UI animations and scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* Glowing text and glass effects */
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 180, 216, 0.4);
+}
+
+.box-shadow-glow {
+  box-shadow: 0 10px 30px -10px rgba(0, 180, 216, 0.15);
+}
+
+.glow-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+  opacity: 0;
+}
+
+.glow-btn:hover::after {
+  left: 125%;
+  opacity: 1;
+}
+

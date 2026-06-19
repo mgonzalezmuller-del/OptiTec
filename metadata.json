@@ -1,0 +1,6 @@
+{
+  "name": "OptiTec Landing",
+  "description": "Sitio web interactivo y estratégico de la consultora de transformación digital OptiTec, con diagnóstico interactivo y caso de estudio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
